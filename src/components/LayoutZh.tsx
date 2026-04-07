@@ -55,20 +55,12 @@ export function NavbarZh() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 md:flex">
-          <Link
-            href="/"
-            className="rounded-full border border-white/20 px-4 py-2 text-xs font-medium text-white/70 transition-all duration-200 hover:border-white/40 hover:text-white"
-          >
-            EN
-          </Link>
-          <Link
-            href="/zh#experiences"
-            className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-deep transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(255,255,255,0.3)]"
-          >
-            参与体验
-          </Link>
-        </div>
+        <Link
+          href="/"
+          className="hidden rounded-full border border-white/20 px-4 py-2 text-xs font-medium text-white/70 transition-all duration-200 hover:border-white/40 hover:text-white md:inline-block"
+        >
+          EN
+        </Link>
 
         <button
           onClick={() => setOpen(!open)}
@@ -82,7 +74,7 @@ export function NavbarZh() {
       </div>
 
       <div className={`overflow-hidden transition-all duration-300 md:hidden ${open ? "max-h-96" : "max-h-0"}`}>
-        <div className="flex flex-col gap-4 bg-blue-deep/95 px-6 py-6 backdrop-blur-xl">
+        <div className="flex flex-col items-end gap-4 bg-blue-deep/95 px-6 py-6 backdrop-blur-xl">
           {links.map((l) => (
             <Link key={l.label} href={l.href} onClick={() => setOpen(false)} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
               {l.label}
@@ -90,9 +82,6 @@ export function NavbarZh() {
           ))}
           <Link href="/" onClick={() => setOpen(false)} className="text-xs font-medium text-white/50 transition-colors hover:text-white">
             English Version
-          </Link>
-          <Link href="/zh#experiences" onClick={() => setOpen(false)} className="mt-2 inline-block rounded-full bg-gradient-to-r from-gold to-[#9ACBEB] px-6 py-2.5 text-center text-sm font-semibold text-white">
-            参与体验
           </Link>
         </div>
       </div>
