@@ -140,10 +140,11 @@ export default function WalkTheWorldPage() {
       <main className="flex-1">
         {/* Hero */}
         <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0B3C7C] via-[#1E6FD9] to-[#2E8B57]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(143,175,155,0.3)_0%,transparent_60%)]" />
-            <div className="grain absolute inset-0" />
+          <div className="absolute inset-0 bg-[#0B3C7C]">
+            <video autoPlay loop muted playsInline className="absolute inset-0 h-full w-full object-cover">
+              <source src="/videos/hero-walk.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60" />
           </div>
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden">
             <span className="whitespace-nowrap font-heading text-[14vw] font-bold uppercase leading-none tracking-tight text-white/[0.05]">WALK THE WORLD</span>

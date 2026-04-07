@@ -45,11 +45,11 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero */}
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0B3C7C] via-[#1E6FD9] to-[#2E8B57]" />
-            <div className="absolute right-0 top-0 h-[600px] w-[600px] bg-[radial-gradient(circle,rgba(126,184,224,0.15)_0%,transparent_70%)]" />
-            <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-[radial-gradient(circle,rgba(143,175,155,0.2)_0%,transparent_70%)]" />
-            <div className="grain absolute inset-0" />
+          <div className="absolute inset-0 bg-[#0B3C7C]">
+            <video autoPlay loop muted playsInline className="absolute inset-0 h-full w-full object-cover">
+              <source src="/videos/hero-home.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60" />
           </div>
 
           {/* Watermark */}

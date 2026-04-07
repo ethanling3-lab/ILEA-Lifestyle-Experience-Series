@@ -144,11 +144,11 @@ export default function HFHYDinnerPage() {
       <main className="flex-1">
         {/* Hero */}
         <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#2D2036] to-[#0B3C7C]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(126,184,224,0.15)_0%,transparent_60%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(234,219,200,0.1)_0%,transparent_50%)]" />
-            <div className="grain absolute inset-0" />
+          <div className="absolute inset-0 bg-[#1A1A2E]">
+            <video autoPlay loop muted playsInline className="absolute inset-0 h-full w-full object-cover">
+              <source src="/videos/hero-dinner.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
           </div>
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden">
             <span className="whitespace-nowrap font-heading text-[14vw] font-bold uppercase leading-none tracking-tight text-white/[0.03]">HFHY DINNER</span>
