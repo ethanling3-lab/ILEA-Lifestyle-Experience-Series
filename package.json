@@ -8,16 +8,29 @@
     "start": "next start"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@react-email/components": "^1.0.11",
+    "@supabase/ssr": "^0.10.0",
+    "@supabase/supabase-js": "^2.102.1",
+    "axios": "^1.14.0",
+    "googleapis": "^171.4.0",
     "next": "^15.3.1",
+    "nodemailer": "^8.0.4",
+    "papaparse": "^5.5.3",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.72.1",
+    "recharts": "^3.8.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.4",
-    "tailwindcss": "^4.1.4",
-    "typescript": "^5.8.3",
     "@types/node": "^22.15.2",
+    "@types/nodemailer": "^8.0.0",
+    "@types/papaparse": "^5.5.2",
     "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2"
+    "@types/react-dom": "^19.1.2",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3"
   }
 }
