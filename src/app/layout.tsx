@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Walk The World | ILEA Lifestyle Experience Series",
+  title: "ILEA Lifestyle Experience Series",
   description:
     "An outdoor walking experience blending movement, nature, and community across iconic landscapes.",
 };
